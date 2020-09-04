@@ -1,0 +1,22 @@
+.myform {
+    height: 200px;
+    padding: 1em;
+}
+/** 垂直居中 */
+.row-vertical-center {
+
+    display: flex;
+    align-items: center;
+}
+
+.formButton {
+    height: 100%;
+    border: 0em;
+}
+.banner {
+        background-image: linear-gradient(-45deg, #29bdd9 0%, #276ace 100%);
+    height: 130px;
+    margin-bottom: 3em;
+    color: white;
+}
+
