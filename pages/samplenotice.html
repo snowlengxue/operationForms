@@ -17,48 +17,144 @@
 </div>
 <div class="container-fluid">
     <div class="row">
-        <div class="table-responsive">
-            <table class="table">
-                <tr>
-                    <th>项目</th>
-                    <th>申请日期</th>
-                    <th>申请人</th>
-                    <th>客户订单之内部PO编号</th>
-                    <th>瞻芯物料编号</th>
-                    <th>封装规格</th>
-                    <th>是否收费</th>
-                    <th>数量</th>
-                    <th>单位</th>
-                    <th>币种</th>
-                    <th>发货发货方式</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>
-                        <label for="myDate">
-                            <input type="date" name="myDate" id="myDate">
-                        </label>
-                    </td>
-                    <td>
-                        <label for="myName">
-                            <input type="text" name="myName" id="myName">
-                        </label>
-                    </td>
-                    <td>
-                        <label for="PO">
-                            <input type="text" name="PO" id="PO">
-                        </label>
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-        </div>
-        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 h4"><strong>客户收件人信息</strong></div>
+    </div>
+    <div class="table-responsive">
+        <table class="table">
+            <tr>
+                <th>要求发货日期</th>
+                <th>客户采购PO号</th>
+                <th>客户物料编号</th>
+                <th>收件人地址</th>
+                <th>联系人</th>
+                <th>联系人电话</th>
+                <th>备注</th>
+            </tr>
+            <tr>
+                <td>
+                    <label for="myDate1">
+                        <input type="date" name="myDate1" id="myDate1">
+                    </label>
+                </td>
+                <td>
+                    <label for="cppo">
+                        <input type="text" name="cppo" id="cppo">
+                    </label>
+                </td>
+                <td>
+                    <label for="cppn">
+                        <input type="text" name="cppn" id="cppn">
+                    </label>
+                </td>
+                <td>
+                    <label for="add">
+                        <input type="text" name="add" id="add">
+                    </label>
+                </td>
+                <td>
+                    <label for="name">
+                        <input type="text" name="name" id="name">
+                    </label>
+                </td>
+                <td>
+                    <label for="tel">
+                        <input type="text" name="tel" id="tel">
+                    </label>
+                </td>
+                <td>
+                    <label for="remarks">
+                        <input type="text" name="remarks" id="remarks">
+                    </label>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 h4"><strong>发货信息</strong></div>
+    </div>
+    <div class="table-responsive">
+        <table class="table">
+            <tr>
+                <th>项目</th>
+                <th>申请日期</th>
+                <th>申请人</th>
+                <th>客户订单之内部PO编号</th>
+                <th>瞻芯物料编号</th>
+                <th>封装规格</th>
+                <th>是否收费</th>
+                <th>数量</th>
+                <th>单位</th>
+                <th>币种</th>
+                <th>发货发货方式</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>
+                    <label for="myDate2">
+                        <input type="date" name="myDate2" id="myDate2">
+                    </label>
+                </td>
+                <td>
+                    <label for="myName">
+                        <input type="text" name="myName" id="myName">
+                    </label>
+                </td>
+                <td>
+                    <label for="PO">
+                        <input type="text" name="PO" id="PO">
+                    </label>
+                </td>
+                <td>
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            请选择
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">IVCR2041DPR</a></li>
+                            <li><a href="#">IVCR2041DR</a></li>
+                            <li><a href="#">IV1D12080T3</a></li>
+                            <li><a href="#">...</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <!--封装规格-->
+                <td>
+                    <label for="GG">
+                        <input type="text" name="PO" id="GG">
+                    </label>
+                </td>
+                <td>
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            请选择
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <li><a href="#">是</a></li>
+                            <li><a href="#">否</a></li>
+                        </ul>
+                    </div>
+                </td>
+                <td>
+                    <label for="num">
+                        <input type="text" name="num" id="num">
+                    </label>
+                </td>
+                <td>颗</td>
+                <td>
+                    <label for="money">
+                        <input type="text" name="num" id="money">
+                    </label>
+                </td>
+                <td>
+                    <label for="ship">
+                        <input type="text" name="num" id="ship">
+                    </label>
+                </td>
+            </tr>
+        </table>
+        <button class="btn btn-primary">新增</button>
     </div>
 </div>
 
